@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' localhost:* ws://localhost:* ws://192.168.1.144:*; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Solar-chan</title>
     <link rel="stylesheet" href="./styles/css-reset.css">
     <link rel="stylesheet" href="./styles/index.css">
   </head>
-  <body class="awake">
+  <body class="sleeping">
     <div class="wrapper">
       <div id="display"></div>
       <div id="dialog-box">
-        <p>Solar-chan has been awake for 30 minutes</p>
+        <p id="dialog-box-msg">Solar-chan is sleeping...</p>
       </div>
     </div>
     <script src="./scripts/solar-chan.js"></script>

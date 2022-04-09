@@ -8,7 +8,7 @@ const websocket = new WebSocket.Server({ port: 5006 });
 let solarChan;
 
 websocket.on('connection', (wsClient) => {
-    solarChan = wsClient;
+  solarChan = wsClient; // note this means only one client is supported, no unique id
 });
 
 // CORs
@@ -27,10 +27,8 @@ app.use(
 );
 
 app.post('/esp-emit-solar', (req, res) => {
-  console.log(req.body, new Date());
-
   if (solarChan) {
-    solarChan.send
+    solarChan.send('esp sends regards');
   }
 
   res.status(200).send('ok');
