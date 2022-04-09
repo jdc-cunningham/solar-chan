@@ -18,12 +18,12 @@ body * {
   box-sizing: border-box;
 }
 
-body.awake .wrapper {
+body.awake #dialog-box {
   background-color: #aecad6;
   background-image: linear-gradient(315deg, #aecad6 0%, #b8d3fe 74%);
 }
 
-body.sleeping .wrapper {
+body.sleeping #dialog-box {
   background-color: #282828;
 }
 
