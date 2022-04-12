@@ -13,7 +13,7 @@ Yeah this is a weird project but I made it so here it is.
 
 #### Schematic
 
-<img src="./schematic.png" width="800"/>
+<img src="./schematic-updated.png" width="800"/>
 
 #### Architecture
 
